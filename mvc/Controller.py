@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, session, flash
-
 from Model import Model2
 
 

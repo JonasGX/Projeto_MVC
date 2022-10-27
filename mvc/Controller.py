@@ -9,5 +9,9 @@ app = Flask(__name__)
 def index():
     return Model2.impimeJogos()
 
+@app.route('/consulta', methods=['GET',])
+def consulta():
+    return Model2.consulta()
+
 # Fazer a aplicação rodar
 app.run(debug=True)

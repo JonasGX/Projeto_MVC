@@ -1,3 +1,4 @@
+from urllib import response
 from flask import Flask, request, jsonify, make_response, render_template, redirect, flash
 import json
 
@@ -24,13 +25,17 @@ cadastro = [
 
 cadastroJSON = json.dumps(cadastro)
 
+
 class Model2:
     def impimeJogos():
         lista1 = []
         lista2 = []
         for x in cadastro:
             if x["id"] >= 1 and x["id"] <= 10:
-                lista1.append(x) 
+                lista1.append(x)
             else:
                 lista2.append(x)
         return render_template('lista.html', titulo='jogos', jogos1=lista1, jogos2=lista2)
+
+    def consulta():
+        return cadastroJSON

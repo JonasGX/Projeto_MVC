@@ -1,38 +1,34 @@
 from flask import Flask, render_template, request, redirect, session, flash
-from Model import Model2
+from Model import Model
 
 # Inserindo aplicação
 app = Flask(__name__)
 
 @app.route('/',)
 def novo():
-    return Model2.novoJogo()
+    return Model.novoJogo()
 
 @app.route('/jogos', methods=['GET',])
 def index():
-    return Model2.impimeJogos()
+    return Model.impimeJogos()
 
 # ---------- Estrutura criacao
 @app.route('/criar', methods=['POST',])
 def criar():
-    return Model2.cadastrarJogo()
-
-@app.route('/bd', methods=['GET',])
-def bancodados():
-    return Model2.cadastrarJogo()
+    return Model.cadastrarJogo()
 
 # ---------- Estrutura consulta
 @app.route('/realizarconsulta', methods=['GET',])
 def consulta():
-    return Model2.consultar()
+    return Model.consultar()
 
 @app.route('/MostrarConsulta', methods=['GET',])
 def criarconsulta():
-    return Model2.mostrarConsulta()
+    return Model.mostrarConsulta()
 
 @app.route('/criarconsulta', methods=['POST',])
 def listarconsulta():
-    return Model2.listarConsulta()
+    return Model.listarConsulta()
 
 
 # Fazer a aplicação rodar

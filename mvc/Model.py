@@ -14,7 +14,7 @@ mydb = mysql.connector.connect(
 )
 
 
-class Model2:
+class Model:
     # Estrutura de cadastro
     def novoJogo():
         return render_template('novo.html', titulo='jogos')

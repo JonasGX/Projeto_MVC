@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block conteudo %}
+        <form action="/criarconsulta" method="post">
+            <fieldset>
+
+                <div class="form-group">
+                    <label for="nome">Consulte algum jogo através do ID</label>
+                    <input type="text" id="id-consulta" name="id-consulta" class="form-control">
+                    <button type="submit" class="btn btn-primary btn-salvar-consultar">Salvar</button>
+                </div>
+
+{% endblock %}

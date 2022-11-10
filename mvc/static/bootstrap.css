@@ -271,6 +271,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  margin-top: 10px;
 }
 
 button::-moz-focus-inner,

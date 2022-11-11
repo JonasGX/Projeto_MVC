@@ -10,9 +10,9 @@ Esse projeto é voltado para uma prova de Framework FullStack.
     - Consultar os jogos por categoria(Tiro, futebol, Corrida, etc...)
   
  Rotas por acesso local:
- http://127.0.0.1:5000/ = Realizar cadastro
- http://127.0.0.1:5000/login = Realizar o Login
- http://127.0.0.1:5000/criarconsulta = Realizar consulta das categorias
- http://127.0.0.1:5000/novoJogo = Inserir jogo na Jogoteca
- http://127.0.0.1:5000/jogos = Todos os jogos da jogoteca
+  - http://127.0.0.1:5000/ = Realizar cadastro
+  - http://127.0.0.1:5000/login = Realizar o Login
+  - http://127.0.0.1:5000/criarconsulta = Realizar consulta das categorias
+  - http://127.0.0.1:5000/novoJogo = Inserir jogo na Jogoteca
+  - http://127.0.0.1:5000/jogos = Todos os jogos da jogoteca
  

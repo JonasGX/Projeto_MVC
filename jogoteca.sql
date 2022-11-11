@@ -16,9 +16,6 @@ senha varchar(8) NOT NULL,
 PRIMARY KEY (cpf)
 );
 
-INSERT INTO usuarios(cpf, nome_usuario, senha) VALUES(51731214839, 'jonas','Jonas@#');
-
 select * from usuarios;
 select * from jogos;
 select * from jogos where categoria = 'Tiro';
-
